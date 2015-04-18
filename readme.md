@@ -10,6 +10,7 @@ Download .zip and run the pbo as addon on your server.
 **Version history**<br/>
 v1 - 08/04/2015 - initial release<br/>
 v2 - 12/04/2015 - removed CBA requirement, some locality fixes<br/>
+v3 - 18/04/2015 - reverted to CBA to fix duplication issues<br/>
 
 **Known issues**<br/>
 This script only runs once at mission start, thus might not work properly with JIP or Respawn.

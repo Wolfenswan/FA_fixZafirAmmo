@@ -4,19 +4,16 @@ class CfgPatches
 	{
 		units[] = {};
 		weapons[] = {};
-		requiredAddons[] = {};
+		requiredAddons[] = {"cba_xeh",
+      "extended_eventhandlers",
+      "cba_extended_eventhandlers"};
 		requiredVersion = 0.1;
 		author[] = {"Wolfenswan"};
 		authorUrl = "wwww.folkarps.com";
 	};
 };
 
-class CfgFunctions
+class Extended_PostInit_EventHandlers
 { 
-  class FA
-  {
-    class functions {
-      class fixZafirAmmoLoop  {file = "FA_fixZafirAmmo\fn_fixZafirAmmoLoop.sqf";postInit = 1};
-    };
-  };
+	FA_fixZafirAmmo  "[] execVM 'FA_fixZafirAmmo\fixZafirAmmoLoop.sqf';";
 };
